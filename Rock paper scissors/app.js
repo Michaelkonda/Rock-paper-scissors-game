@@ -24,12 +24,14 @@ const game = ()=> {
 
         options.forEach(option => {
             option.addEventListener("click", function() {
-                
+                //computer choice
+                const computerNumber = Math.floor(Math.random() * 3);
+                const computerChoice = computerOptions[computerNumber];  
 
             });
         });
 
-        const computerNumber = Math.floor(Math.random() * 3);
+        
     }
     //IS call all the inner function
     startGame();
