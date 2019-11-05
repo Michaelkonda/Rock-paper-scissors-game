@@ -27,11 +27,22 @@ const game = ()=> {
                 //computer choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];  
-
+// Here is where we call compare hands
             });
         });
+    };
 
-        
+
+
+    const compareHands = (playerChoice, computerChoice) =>{
+        //Update text
+        const winner = document.querySelector(".winner")
+        //checking for a tie
+        if(playerChoice === computerChoice){
+            winner.textContent = 'It is a tie';
+            return;
+        }
+
     }
     //IS call all the inner function
     startGame();
