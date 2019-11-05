@@ -22,10 +22,18 @@ const game = ()=> {
         //Computer options
         const computerOptions = ["rock", "paper", "scissors"];
 
+        options.forEach(option => {
+            option.addEventListener("click", function() {
+                
+
+            });
+        });
+
         const computerNumber = Math.floor(Math.random() * 3);
     }
     //IS call all the inner function
     startGame();
+    playMatch();
     };
 
 
