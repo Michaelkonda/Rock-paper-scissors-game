@@ -62,6 +62,16 @@ const game = ()=> {
                 return;
             }
         }
+        //Check for scissors
+        if(playerChoice === 'scissors'){
+            if(computerChoice === 'rock'){
+                winner.textContent = 'Computer Wins'
+                return;
+            }else{
+                winner.textContent = 'Player Wins'
+                return;
+            }
+        }
 
     }
     //IS call all the inner function
