@@ -42,6 +42,16 @@ const game = ()=> {
             winner.textContent = 'It is a tie';
             return;
         }
+        //Check for rock
+        if(playerChoice === 'rock'){
+            if(computerChoice === 'scissors'){
+                winner.textContent = 'Player Wins'
+                return;
+            }else{
+                winner.textContent = 'Computer Wins'
+                return;
+            }
+        }
 
     }
     //IS call all the inner function
