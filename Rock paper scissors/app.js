@@ -52,6 +52,16 @@ const game = ()=> {
                 return;
             }
         }
+        //Check for paper
+        if(playerChoice === 'paper'){
+            if(computerChoice === 'scissors'){
+                winner.textContent = 'Computer Wins'
+                return;
+            }else{
+                winner.textContent = 'Player Wins'
+                return;
+            }
+        }
 
     }
     //IS call all the inner function
