@@ -36,15 +36,13 @@ const game = ()=> {
                 const computerChoice = computerOptions[computerNumber]; 
 
 
-setTimeout(() =>{
+setTimeout(() => {
     // here is where we call compareHands
-computerHands(this.textContent, computerChoice);
+compareHands(this.textContent, computerChoice);
 
 //Update Images
 playerHand.src = `./assets/${this.textContent}.png`;
 computerHand.src = `./assets/${computerChoice}.png`;
-
-});
 }, 2000);
     
 //Animation
@@ -112,7 +110,7 @@ const updateScore = () =>{
             }
         }
 
-    }
+    };      
     //IS call all the inner function
     startGame();
     playMatch();
