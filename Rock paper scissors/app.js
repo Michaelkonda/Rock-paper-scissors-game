@@ -38,7 +38,12 @@ computerHand.src = `./assets/${computerChoice}.png`;
         });
     };
 
-
+const updateScore = () =>{
+    const playerScore = document.querySelector('.player-score p');
+    const computerScore = document.querySelector('.computer-score p');
+    playerScore.textContent = pScore;
+    computerScore.textContent = cScore;
+}
 
     const compareHands = (playerChoice, computerChoice) =>{
         //Update text
@@ -51,30 +56,42 @@ computerHand.src = `./assets/${computerChoice}.png`;
         //Check for rock
         if(playerChoice === 'rock'){
             if(computerChoice === 'scissors'){
-                winner.textContent = 'Player Wins'
+                winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore;
                 return;
             }else{
-                winner.textContent = 'Computer Wins'
+                winner.textContent = 'Computer Wins';
+                cScore++;
+                updateScore;
                 return;
             }
         }
         //Check for paper
         if(playerChoice === 'paper'){
             if(computerChoice === 'scissors'){
-                winner.textContent = 'Computer Wins'
+                winner.textContent = 'Computer Wins';
+                cScore++;
+                updateScore;
                 return;
             }else{
-                winner.textContent = 'Player Wins'
+                winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore;
                 return;
             }
         }
         //Check for scissors
         if(playerChoice === 'scissors'){
             if(computerChoice === 'rock'){
-                winner.textContent = 'Computer Wins'
+                winner.textContent = 'Computer Wins';
+                cScore++;
+                updateScore;
                 return;
             }else{
-                winner.textContent = 'Player Wins'
+                winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore;
                 return;
             }
         }
