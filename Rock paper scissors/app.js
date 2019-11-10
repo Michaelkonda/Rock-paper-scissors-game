@@ -58,12 +58,12 @@ const updateScore = () =>{
             if(computerChoice === 'scissors'){
                 winner.textContent = 'Player Wins';
                 pScore++;
-                updateScore;
+                updateScore();
                 return;
             }else{
                 winner.textContent = 'Computer Wins';
                 cScore++;
-                updateScore;
+                updateScore();
                 return;
             }
         }
@@ -72,12 +72,12 @@ const updateScore = () =>{
             if(computerChoice === 'scissors'){
                 winner.textContent = 'Computer Wins';
                 cScore++;
-                updateScore;
+                updateScore();
                 return;
             }else{
                 winner.textContent = 'Player Wins';
                 pScore++;
-                updateScore;
+                updateScore();
                 return;
             }
         }
@@ -86,12 +86,12 @@ const updateScore = () =>{
             if(computerChoice === 'rock'){
                 winner.textContent = 'Computer Wins';
                 cScore++;
-                updateScore;
+                updateScore();
                 return;
             }else{
                 winner.textContent = 'Player Wins';
                 pScore++;
-                updateScore;
+                updateScore();
                 return;
             }
         }
